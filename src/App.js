@@ -20,7 +20,7 @@ class App extends Component {
   getWeather = async(event) =>{
     event.preventDefault();
     const city = event.target.elements.city.value;
-    const api = await fetch(`http://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${API}&units=metric`,{
+    const api = await fetch(`https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${API}&units=metric`,{
       // headers : { 
       //   'Content-Type': 'application/json',
       //   'Accept': 'application/json'
